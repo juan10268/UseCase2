@@ -1,0 +1,22 @@
+<template>
+    <div class="slds-grid slds-wrap slds-align_absolute-center">
+        <div class="slds-col slds-size_3-of-12">
+            <lightning-button label="Activate Order" title="Non-primary action" onclick={setOrderActive} class="slds-m-left_x-small" disabled={isActive}></lightning-button>
+        </div>
+        <div class="slds-col slds-size_3-of-12">
+            <lightning-button label="Show Products" title="Non-primary action" onclick={showProductOptions} class="slds-m-left_x-small" disabled={isActive}></lightning-button>
+        </div>
+        <template if:true={isShowingCombobox}>
+            <div class="slds-col slds-size_6-of-12" style="margin-top: -18px;">
+                <lightning-combobox name="product" value={productSelected} placeholder="Select Product" options={products} onchange={addOrUpdateProducts}></lightning-combobox>        
+            </div>
+        </template>        
+    </div>    
+    <template if:true={itemsList}>
+        <lightning-datatable data={itemsList} columns={columns} key-field="Id" hide-checkbox-column="false">
+        </lightning-datatable>
+    </template>
+    <template if:true={error}>
+        {error}
+    </template>
+</template>
