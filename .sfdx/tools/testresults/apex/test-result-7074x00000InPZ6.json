@@ -1,0 +1,22 @@
+{
+  "summary": {
+    "outcome": "Passed",
+    "testsRan": 0,
+    "passing": 0,
+    "failing": 0,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "0%",
+    "skipRate": "0%",
+    "testStartTime": "Thu Jan 28 2021 8:31:55 a. m.",
+    "testExecutionTimeInMs": 0,
+    "testTotalTimeInMs": 0,
+    "commandTimeInMs": 933,
+    "hostname": "https://independent36-dev-ed.my.salesforce.com",
+    "orgId": "00D4x000006rRQ1EAM",
+    "username": "cognizantusecase2@jpurrea.com",
+    "testRunId": "7074x00000InPZ6",
+    "userId": "0054x000003Qhg5AAC"
+  },
+  "tests": []
+}
